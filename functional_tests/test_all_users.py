@@ -14,8 +14,8 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
         self.browser.implicitly_wait(1)
  
     def tearDown(self):
-        # self.browser.quit()
-        pass
+        self.browser.quit()
+        # pass
  
     def get_full_url(self, namespace):
         return self.live_server_url + reverse(namespace)
